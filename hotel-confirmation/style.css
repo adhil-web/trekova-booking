@@ -1,0 +1,271 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #fff;
+    color: #000;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.form-container {
+    flex: 1;
+    max-width: 450px;
+}
+
+h1 {
+    color: #8B0000;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group,
+.form-group-inline {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group-inline {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.form-group-inline:last-child {
+    margin-right: 0;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #8B0000;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="datetime-local"],
+input[type="number"],
+select {
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[readonly] {
+    background-color: #f0f0f0;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 10px 15px 15px 15px;
+    margin-bottom: 15px;
+}
+
+legend {
+    font-weight: bold;
+    color: #8B0000;
+    padding: 0 5px;
+}
+
+.checkbox-group {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.total-rooms {
+    margin-top: 10px;
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+button {
+    background-color: #8B0000;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    flex: 1;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #5a0000;
+}
+
+.preview-container {
+    flex: 1;
+    max-width: 700px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: #fff;
+}
+
+.confirmation-preview {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.logo {
+    max-height: 80px;
+    object-fit: contain;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #8B0000;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.contact-info .icon {
+    width: 18px;
+    height: 18px;
+}
+
+.title {
+    text-align: center;
+    color: #8B0000;
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    border-top: 1px solid black;
+    padding-top: 10px;
+}
+
+h3 {
+    color: #8B0000;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+.contact-numbers {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.contact-numbers div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.contact-numbers .icon {
+    width: 20px;
+    height: 20px;
+}
+
+.note {
+    margin-top: 25px;
+    font-weight: bold;
+    color: #8B0000;
+    font-size: 1.1rem;
+}
+
+/* PDF generation styles */
+.pdf-generation .preview-container {
+    border: none;
+    padding: 0;
+    max-width: none;
+    width: 100%;
+    margin: 0;
+    box-shadow: none;
+}
+
+.pdf-generation .confirmation-preview {
+    max-width: none;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 14px; /* Slightly smaller font for better fit */
+    line-height: 1.4;
+}
+
+.pdf-generation .header {
+    margin-bottom: 10px;
+}
+
+.pdf-generation .logo {
+    max-height: 70px; /* Increased logo size for better fit */
+}
+
+.pdf-generation .title {
+    font-size: 1.5rem; /* Slightly smaller title */
+    margin-bottom: 15px;
+}
+
+.pdf-generation h3 {
+    font-size: 1.1rem;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+.pdf-generation ul {
+    padding-left: 15px;
+}
+
+.pdf-generation ul li {
+    margin-bottom: 6px;
+}
+
+.pdf-generation .contact-numbers {
+    margin-top: 15px;
+    font-size: 1rem;
+}
+
+.pdf-generation .note {
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #8B0000;
+}
